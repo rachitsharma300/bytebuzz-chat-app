@@ -58,7 +58,7 @@ public class RoomController
 
 
     // ---- Get Message of Room APIs ----
-    @GetMapping("/{roomId/messages}")
+    @GetMapping("/{roomId}/messages")
     public ResponseEntity<List<Message>> getMessages(
             @PathVariable String roomId,
             @RequestParam(value = "page", defaultValue = "0", required = false) int page,
