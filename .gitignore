@@ -22,3 +22,23 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+# Intelliji idea
+*.idea
+
+# ====== React/Node.js Specific Ignore Rules ======
+
+# Node modules
+frontend/node_modules/
+
+# Build outputs
+frontend/dist/
+frontend/.vite/
+
+# Environment variables
+frontend/.env
+frontend/.env.*.local
+
+# OS-specific
+.DS_Store
+Thumbs.db
