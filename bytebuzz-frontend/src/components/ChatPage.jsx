@@ -78,7 +78,7 @@ const ChatPage = () => {
           >
             <div
               className={`my-2 ${
-                message.sender === currentUser ? "bg-blue-800": "bg:blue-800"
+                message.sender === currentUser ? "bg-blue-500" : "bg-blue-900"
               } p-2 max-w-xs rounded `}
             >
               <div className="flex flex-row gap-2">
