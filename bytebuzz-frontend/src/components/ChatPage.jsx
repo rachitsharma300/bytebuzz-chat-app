@@ -3,12 +3,46 @@ import { MdAttachFile, MdSend } from "react-icons/md";
 import { useState } from "react";
 
 const ChatPage = () => {
-  const [messages, setMessages] = useState([]);
+  const [messages, setMessages] = useState([
+    {
+      content: "Hello, how are you?",
+      sender: "Rachit",
+    },
+    {
+      content: "I'm good, thanks! How about you?",
+      sender: "Doe",
+    },
+    {
+      content: "Doing well, just working on some projects.",
+      sender: "Rachit",
+    },
+    {
+      content: "Sounds great! Let me know if you need any help.",
+      sender: "John",
+    },
+        {
+      content: "Hello, how are you?",
+      sender: "Rachit",
+    },
+    {
+      content: "I'm good, thanks! How about you?",
+      sender: "Doe",
+    },
+    {
+      content: "Doing well, just working on some projects.",
+      sender: "Rachit",
+    },
+    {
+      content: "Sounds great! Let me know if you need any help.",
+      sender: "John",
+    },
+  ]);
   const [input, setInput] = useState("");
   const inputRef = useRef(null);
   const chatBoxRef = useRef(null);
   const [stompClient, setStompClient] = useState(null);
   const [roomId, setRoomId] = useState("");
+  const [currentUser] = useState("Rachit");
 
   return (
     <div className="">
@@ -34,12 +68,26 @@ const ChatPage = () => {
         </div>
       </header>
 
-      <main className="py-20 w-2/3 dark:bg-slate-600 mx-auto h-screen overflow-auto">
+      <main className="py-20 px-10 w-2/3 dark:bg-slate-600 mx-auto h-screen overflow-auto">
         {messages.map((message, index) => (
-          <div key={index}>
-            <div>
-              <p>{message.sender}</p>
-              <p>{message.content}</p>
+          <div
+            key={index}
+            className={`flex ${
+              message.sender === currentUser ? "justify-end" : "justify-start"
+            } `}
+          >
+            <div
+              className={`my-2 ${
+                message.sender === currentUser ? "bg-green-800" : "bg:blue-800"
+              } p-2 max-w-xs rounded ` }
+            >
+              <div className="flex flex-row gap-2">
+                <img className="h-10 w-10" src="https://i.pravatar.cc" alt="" />
+                <div className="flex-flex-col-gap-1">
+                  <p className="text-sm font-bold">{message.sender}</p>
+                  <p>{message.content}</p>
+                </div>
+              </div>
             </div>
           </div>
         ))}
