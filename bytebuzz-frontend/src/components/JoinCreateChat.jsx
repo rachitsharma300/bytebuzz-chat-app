@@ -1,10 +1,9 @@
 import React from "react";
 import chatIcon from "../assets/chat.png";
+import { toast } from "react-hot-toast";
 
 const JoinCreateChat = () => {
-  {
-    /* Integration to backedend */
-  }
+  /* Integration to backedend */
   const [detail, setDetail] = React.useState({
     roomId: "",
     userName: "",
@@ -17,16 +16,28 @@ const JoinCreateChat = () => {
     });
   }
 
-  function joinChat(){
-
+  function validateForm() {
+    if (detail.roomId === "" || detail.userName === "") {
+      toast.error("Please fill all the fields");
+      return false;
+    }
+    return true;
   }
 
-function createRoom(){
 
+function joinChat() {
+  if (validateForm()) {
+    //Join the chat
+  }
 }
 
-
-
+  function createRoom() {
+    if (validateForm()) {
+      //Create the room
+      console.log(detail);
+      // Call API to create room on the backend
+    }
+  }
 
 
   return (
@@ -46,7 +57,7 @@ function createRoom(){
             Your name
           </label>
           <input
-          onChange={handleFormInputChange}
+            onChange={handleFormInputChange}
             value={detail.userName}
             type="text"
             id="name"
@@ -62,8 +73,8 @@ function createRoom(){
             Room ID / New Room ID
           </label>
           <input
-          name="roomId"
-          onChange={handleFormInputChange}
+            name="roomId"
+            onChange={handleFormInputChange}
             value={detail.roomId}
             type="text"
             id="name"
@@ -74,17 +85,23 @@ function createRoom(){
 
         {/* For button */}
         <div className="flex justify-center gap-4 mt-4">
-          <button onClick={joinChat} className="px-3 py-2 dark:bg-blue-500 hover:dark:bg-blue-800 rounded-full">
+          <button
+            onClick={joinChat}
+            className="px-3 py-2 dark:bg-blue-500 hover:dark:bg-blue-800 rounded-full"
+          >
             Join Room
           </button>
 
-          <button onClick={createRoom} className="px-3 py-2 dark:bg-orange-500 hover:dark:bg-orange-800 rounded-full">
+          <button
+            onClick={createRoom}
+            className="px-3 py-2 dark:bg-orange-500 hover:dark:bg-orange-800 rounded-full"
+          >
             Create Room
           </button>
         </div>
       </div>
     </div>
   );
-};
+}
 
 export default JoinCreateChat;
