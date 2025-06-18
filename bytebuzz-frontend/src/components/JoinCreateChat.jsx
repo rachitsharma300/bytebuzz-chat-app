@@ -20,7 +20,7 @@ const JoinCreateChat = () => {
           <input
             type="text"
             id="name"
-            className="w-full dark:bg-gray-600 px-4 border dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full dark:bg-gray-600 px-4 border dark:border-gray-600 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500"
           ></input>
         </div>
         {/* For room div */}
