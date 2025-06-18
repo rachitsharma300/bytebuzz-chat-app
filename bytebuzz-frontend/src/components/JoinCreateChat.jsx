@@ -1,6 +1,7 @@
 import React from "react";
 import chatIcon from "../assets/chat.png";
 import { toast } from "react-hot-toast";
+import { createRoomApi } from "../services/RoomService";
 
 const JoinCreateChat = () => {
   /* Integration to backedend */
@@ -24,21 +25,28 @@ const JoinCreateChat = () => {
     return true;
   }
 
-
-function joinChat() {
-  if (validateForm()) {
-    //Join the chat
+  function joinChat() {
+    if (validateForm()) {
+      //Join the chat
+    }
   }
-}
 
-  function createRoom() {
+  async function createRoom() {
     if (validateForm()) {
       //Create the room
       console.log(detail);
       // Call API to create room on the backend
+      try {
+        const response = await createRoomApi(detail.roomId);
+        console.log(response);
+        toast.success("Room created successfully");
+        joinChat();
+      } catch (error) {
+        console.log(error);
+        console.log("Error creating room");
+      }
     }
   }
-
 
   return (
     <div className="min-h-screen flex items-center justify-center">
@@ -102,6 +110,6 @@ function joinChat() {
       </div>
     </div>
   );
-}
+};
 
 export default JoinCreateChat;
