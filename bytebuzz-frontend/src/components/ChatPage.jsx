@@ -18,9 +18,9 @@ const ChatPage = () => {
     },
     {
       content: "Sounds great! Let me know if you need any help.",
-      sender: "John",
+      sender: "Mausam",
     },
-        {
+    {
       content: "Hello, how are you?",
       sender: "Rachit",
     },
@@ -78,8 +78,8 @@ const ChatPage = () => {
           >
             <div
               className={`my-2 ${
-                message.sender === currentUser ? "bg-green-800" : "bg:blue-800"
-              } p-2 max-w-xs rounded ` }
+                message.sender === currentUser ? "bg-blue-800": "bg:blue-800"
+              } p-2 max-w-xs rounded `}
             >
               <div className="flex flex-row gap-2">
                 <img className="h-10 w-10" src="https://i.pravatar.cc" alt="" />
