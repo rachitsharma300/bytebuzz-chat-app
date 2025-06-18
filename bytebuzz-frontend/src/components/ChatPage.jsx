@@ -2,14 +2,14 @@ import React, { useRef } from "react";
 import { MdAttachFile, MdSend } from "react-icons/md";
 import { useState } from "react";
 
-const [messages, setMessages] = useState([]);
-const [input, setInput] = useState("");
-const inputRef = useRef(null);
-const chatBoxRef = useRef(null);
-const [stompClient, setStompClient] = useState(null);
-const [roomId, setRoomId] = useState("");
-
 const ChatPage = () => {
+  const [messages, setMessages] = useState([]);
+  const [input, setInput] = useState("");
+  const inputRef = useRef(null);
+  const chatBoxRef = useRef(null);
+  const [stompClient, setStompClient] = useState(null);
+  const [roomId, setRoomId] = useState("");
+
   return (
     <div className="">
       {/* header section */}
@@ -34,58 +34,37 @@ const ChatPage = () => {
         </div>
       </header>
 
-
-
-
-
-
       <main className="py-20 w-2/3 dark:bg-slate-600 mx-auto h-screen overflow-auto">
-      
-
-
-
-
+        {messages.map((message, index) => (
+          <div key={index}>
+            <div>
+              <p>{message.sender}</p>
+              <p>{message.content}</p>
+            </div>
+          </div>
+        ))}
       </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
       {/* Input message container */}
       <div className="fixed bottom-4 w-full h-16">
-        <div className="h-full pr-10 gap-4  flex items-center justify-between rounded-full w-1/2 mx-auto dark:bg-gray-900">
+        <div className="h-full pr-10 gap-4 flex items-center justify-between rounded-full w-11/12 md:w-2/3 lg:w-1/2 mx-auto dark:bg-gray-900 shadow-lg">
           <input
             type="text"
             placeholder="Type your message here..."
-            className="dark:border-gray-600 w-full  dark:bg-gray-800 px-5 py-2 rounded-full h-full focus:none focus:outline-none "
+            className="w-full dark:bg-gray-800 px-5 py-2 rounded-full h-full focus:outline-none text-white placeholder-gray-400 transition-all duration-300"
           />
-          <div className="flex gap-1">
-            <button className="dark:bg-purple-600 h10 w-10  flex justify-center items-center rounded-full">
-              <MdAttachFile size={20} />
+          <div className="flex gap-2">
+            <button
+              className="bg-purple-600 hover:bg-purple-700 dark:bg-purple-600 dark:hover:bg-purple-700 h-10 w-10 flex justify-center items-center rounded-full transition-transform duration-300 hover:scale-110 shadow-md"
+              title="Attach file"
+            >
+              <MdAttachFile size={20} className="text-white" />
             </button>
-            <button className="dark:bg-red-600 h10 w-10  flex justify-center items-center rounded-full hover:dark:bg-green-800">
-              <MdSend size={20} />
+            <button
+              className="bg-green-600 hover:bg-green-700 dark:bg-green-700 dark:hover:bg-green-800 h-10 w-10 flex justify-center items-center rounded-full transition-transform duration-300 hover:scale-110 shadow-md"
+              title="Send message"
+            >
+              <MdSend size={20} className="text-white" />
             </button>
           </div>
         </div>
