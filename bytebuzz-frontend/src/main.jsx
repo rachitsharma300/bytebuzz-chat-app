@@ -8,7 +8,7 @@ import { Toaster } from "react-hot-toast";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
-    <Toaster />
+    <Toaster position="top-right" />
       <AppRoutes />
     </BrowserRouter>
   </StrictMode>
