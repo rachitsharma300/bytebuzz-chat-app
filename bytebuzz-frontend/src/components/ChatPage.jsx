@@ -20,22 +20,7 @@ const ChatPage = () => {
       content: "Sounds great! Let me know if you need any help.",
       sender: "Mausam",
     },
-    {
-      content: "Hello, how are you?",
-      sender: "Rachit",
-    },
-    {
-      content: "I'm good, thanks! How about you?",
-      sender: "Doe",
-    },
-    {
-      content: "Doing well, just working on some projects.",
-      sender: "Rachit",
-    },
-    {
-      content: "Sounds great! Let me know if you need any help.",
-      sender: "John",
-    },
+
   ]);
   const [input, setInput] = useState("");
   const inputRef = useRef(null);
