@@ -1,7 +1,7 @@
 import React from "react";
 import chatIcon from "../assets/chat.png";
-import  toast  from "react-hot-toast";
-import { createRoomApi } from "../services/RoomService";
+import toast from "react-hot-toast";
+import { createRoomApi, joinChatApi } from "../services/RoomService";
 import useChatContext from "../context/ChatContext";
 import { useNavigate } from "react-router";
 
@@ -12,7 +12,8 @@ const JoinCreateChat = () => {
     userName: "",
   });
 
-  const { roomId, userName, setRoomId, setCurrentUser, setConnected } = useChatContext();
+  const { roomId, userName, setRoomId, setCurrentUser, setConnected } =
+    useChatContext();
   const navigate = useNavigate();
 
   function handleFormInputChange(event) {
@@ -30,9 +31,27 @@ const JoinCreateChat = () => {
     return true;
   }
 
-  function joinChat() {
+  async function joinChat() {
     if (validateForm()) {
       //Join the chat
+
+      try {
+        const room = await joinChatApi(detail.roomId);
+        toast.success("Joined room successfully");
+        setCurrentUser(detail.userName);
+        setRoomId(room.roomId);
+        setConnected(true);
+        // Redirect to chat page
+        navigate("/chat");
+        // joinChatApi(detail.roomId)
+      } catch (error) {
+        if (error.status === 404) {
+          toast.error(error.response.data);
+        } else {
+          toast.error("Room not found");
+        }
+        console.log(error);
+      }
     }
   }
 
@@ -49,11 +68,9 @@ const JoinCreateChat = () => {
         setCurrentUser(detail.userName);
         setRoomId(response.roomId);
         setConnected(true);
-
+        // Redirect to chat page
         navigate("/chat");
-
-// Redirect to chat page
-       // joinChat();
+        // joinChat();
       } catch (error) {
         console.log(error);
         if (error.status === 400) {
