@@ -6,6 +6,7 @@ import { baseURL } from "../config/AxiosHelper";
 import toast from "react-hot-toast";
 import SockJS from "sockjs-client";
 import { Stomp } from "@stomp/stompjs";
+import { getMessagess } from "../services/RoomService";
 
 const ChatPage = () => {
   const { roomId, currentUser, connected } = useChatContext();
@@ -48,10 +49,16 @@ const ChatPage = () => {
   //page init...
   //Load messages...
 
-  
-
-
-
+  useEffect(() => {
+    async function loadMessages() {
+      try {
+        const messages = await getMessagess(roomId);
+      //  console.log(messages);
+        setMessages(messages);
+      } catch (error) {}
+    }
+    loadMessages();
+  }, []);
 
   // init stompClient...
   //subscribe
