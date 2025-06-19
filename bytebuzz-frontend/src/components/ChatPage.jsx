@@ -7,6 +7,7 @@ import toast from "react-hot-toast";
 import SockJS from "sockjs-client";
 import { Stomp } from "@stomp/stompjs";
 import { getMessagess } from "../services/RoomService";
+import { timeAgo } from "../config/helper";
 
 const ChatPage = () => {
   const {
@@ -185,6 +186,9 @@ const ChatPage = () => {
                 <div className="flex-flex-col-gap-1">
                   <p className="text-sm font-bold">{message.sender}</p>
                   <p>{message.content}</p>
+                  <p className="text-xs text-gray-400">
+                    {timeAgo(message.timeStamp)}
+                  </p>
                 </div>
               </div>
             </div>
@@ -198,6 +202,11 @@ const ChatPage = () => {
           <input
             value={input}
             onChange={(e) => setInput(e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") {
+                sendMessage();
+              }
+            }}
             type="text"
             placeholder="Type your message here..."
             className="w-full dark:bg-gray-800 px-5 py-2 rounded-full h-full focus:outline-none text-white placeholder-gray-400 transition-all duration-300"
