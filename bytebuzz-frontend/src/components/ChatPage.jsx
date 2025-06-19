@@ -1,21 +1,24 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { MdAttachFile, MdSend } from "react-icons/md";
-import { useState } from "react";
 import useChatContext from "../context/ChatContext";
 import { useNavigate } from "react-router";
+import { baseURL } from "../config/AxiosHelper";
+import toast from "react-hot-toast";
+import SockJS from "sockjs-client";
+import { Stomp } from "@stomp/stompjs";
 
 const ChatPage = () => {
   const { roomId, currentUser, connected } = useChatContext();
-  console.log(roomId);
-  console.log(currentUser);
-  console.log(connected);
+  // console.log(roomId);
+  // console.log(currentUser);
+  // console.log(connected);
 
   const navigate = useNavigate();
   useEffect(() => {
     if (!connected) {
       navigate("/");
     }
-  },  [connected, roomId, currentUser]);
+  }, [connected, roomId, currentUser]);
 
   const [messages, setMessages] = useState([
     {
@@ -41,6 +44,55 @@ const ChatPage = () => {
   const [stompClient, setStompClient] = useState(null);
   // const [roomId, setRoomId] = useState("");
   // const [currentUser] = useState("Rachit");
+
+  //page init...
+  //Load messages...
+
+  // init stompClient...
+  //subscribe
+
+  useEffect(() => {
+    const connectWebSocket = () => {
+      //SockJS
+      const sock = new SockJS(`${baseURL}/chat`);
+
+      const client = Stomp.over(() => sock);
+      client.connect({}, () => {
+        setStompClient(client);
+        toast.success("connected");
+        client.subscribe(`/topic/room/${roomId}`, (message) => {
+          console.log(message);
+          const newMessage = JSON.parse(message.body);
+          setMessages((prev) => [...prev, newMessage]);
+          // rest of the work after success receiving the message
+        });
+      });
+    };
+    connectWebSocket();
+
+    //stomp client
+  }, [roomId]);
+
+  //  send handle message
+  const sendMessage = async () => {
+    if (stompClient && connected && input.trim()) {
+      console.log(input);
+
+      const message = {
+        sender: currentUser,
+        content: input,
+        roomId: roomId,
+      };
+
+      stompClient.send(
+        `/app/sendMessage/${roomId}`,
+        {},
+        JSON.stringify(message),
+        {}
+      );
+      setInput("");
+    }
+  };
 
   return (
     <div className="">
@@ -95,6 +147,8 @@ const ChatPage = () => {
       <div className="fixed bottom-4 w-full h-16">
         <div className="h-full pr-10 gap-4 flex items-center justify-between rounded-full w-11/12 md:w-2/3 lg:w-1/2 mx-auto dark:bg-gray-900 shadow-lg">
           <input
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
             type="text"
             placeholder="Type your message here..."
             className="w-full dark:bg-gray-800 px-5 py-2 rounded-full h-full focus:outline-none text-white placeholder-gray-400 transition-all duration-300"
@@ -107,6 +161,7 @@ const ChatPage = () => {
               <MdAttachFile size={20} className="text-white" />
             </button>
             <button
+              onClick={sendMessage}
               className="bg-green-600 hover:bg-green-700 dark:bg-green-700 dark:hover:bg-green-800 h-10 w-10 flex justify-center items-center rounded-full transition-transform duration-300 hover:scale-110 shadow-md"
               title="Send message"
             >
