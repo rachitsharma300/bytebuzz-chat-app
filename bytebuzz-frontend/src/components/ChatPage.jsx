@@ -1,8 +1,22 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { MdAttachFile, MdSend } from "react-icons/md";
 import { useState } from "react";
+import useChatContext from "../context/ChatContext";
+import { useNavigate } from "react-router";
 
 const ChatPage = () => {
+  const { roomId, currentUser, connected } = useChatContext();
+  console.log(roomId);
+  console.log(currentUser);
+  console.log(connected);
+
+  const navigate = useNavigate();
+  useEffect(() => {
+    if (!connected) {
+      navigate("/");
+    }
+  },  [connected, roomId, currentUser]);
+
   const [messages, setMessages] = useState([
     {
       content: "Hello, how are you?",
@@ -20,14 +34,13 @@ const ChatPage = () => {
       content: "Sounds great! Let me know if you need any help.",
       sender: "Mausam",
     },
-
   ]);
   const [input, setInput] = useState("");
   const inputRef = useRef(null);
   const chatBoxRef = useRef(null);
   const [stompClient, setStompClient] = useState(null);
-  const [roomId, setRoomId] = useState("");
-  const [currentUser] = useState("Rachit");
+  // const [roomId, setRoomId] = useState("");
+  // const [currentUser] = useState("Rachit");
 
   return (
     <div className="">
@@ -42,7 +55,7 @@ const ChatPage = () => {
         {/* username container */}
         <div>
           <h1 className="text-xl font-semibold">
-            User : <span>Rachit Sharma</span>
+            User : <span>Rachit </span>
           </h1>
         </div>
         {/* button leave room */}
