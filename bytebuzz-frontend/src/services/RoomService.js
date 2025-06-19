@@ -10,6 +10,6 @@ export const createRoomApi = async (roomDetail) => {
 };
 
 export const joinChatApi = async (roomId) => {
-  const respone = await httpClient.get(`/api/v1/rooms/${roomId}`);
-  return respone.data;
+  const response = await httpClient.get(`/api/v1/rooms/${roomId}`);
+  return response.data;
 };
