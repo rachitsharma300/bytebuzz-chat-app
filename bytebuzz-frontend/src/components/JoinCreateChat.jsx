@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import chatIcon from "../assets/chat.png";
 import toast from "react-hot-toast";
 import { createRoomApi, joinChatApi } from "../services/RoomService";
@@ -45,7 +45,7 @@ const JoinCreateChat = () => {
         navigate("/chat");
         // joinChatApi(detail.roomId)
       } catch (error) {
-        if (error.status === 404) {
+        if (error.status === 400) {
           toast.error(error.response.data);
         } else {
           toast.error("Room not found");
