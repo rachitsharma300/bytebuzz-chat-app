@@ -1,7 +1,9 @@
 import React from "react";
 import chatIcon from "../assets/chat.png";
-import { toast } from "react-hot-toast";
+import  toast  from "react-hot-toast";
 import { createRoomApi } from "../services/RoomService";
+import useChatContext from "../context/ChatContext";
+import { useNavigate } from "react-router";
 
 const JoinCreateChat = () => {
   /* Integration to backedend */
@@ -9,6 +11,9 @@ const JoinCreateChat = () => {
     roomId: "",
     userName: "",
   });
+
+  const { roomId, userName, setRoomId, setCurrentUser, setConnected } = useChatContext();
+  const navigate = useNavigate();
 
   function handleFormInputChange(event) {
     setDetail({
@@ -41,7 +46,14 @@ const JoinCreateChat = () => {
         console.log(response);
         toast.success("Room created successfully");
         // Join the room
-        joinChat();
+        setCurrentUser(detail.userName);
+        setRoomId(response.roomId);
+        setConnected(true);
+
+        navigate("/chat");
+
+// Redirect to chat page
+       // joinChat();
       } catch (error) {
         console.log(error);
         if (error.status === 400) {
