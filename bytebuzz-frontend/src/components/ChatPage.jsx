@@ -9,7 +9,14 @@ import { Stomp } from "@stomp/stompjs";
 import { getMessagess } from "../services/RoomService";
 
 const ChatPage = () => {
-  const { roomId, currentUser, connected } = useChatContext();
+  const {
+    roomId,
+    currentUser,
+    connected,
+    setRoomId,
+    setCurrentUser,
+    setConnected,
+  } = useChatContext();
   // console.log(roomId);
   // console.log(currentUser);
   // console.log(connected);
@@ -53,12 +60,24 @@ const ChatPage = () => {
     async function loadMessages() {
       try {
         const messages = await getMessagess(roomId);
-      //  console.log(messages);
+        //  console.log(messages);
         setMessages(messages);
       } catch (error) {}
     }
-    loadMessages();
+    if (connected) {
+      loadMessages();
+    }
   }, []);
+
+  // Scroll Down
+  useEffect(() => {
+    if (chatBoxRef.current) {
+      chatBoxRef.current.scroll({
+        top: chatBoxRef.current.scrollHeight,
+        behavior: "smooth",
+      });
+    }
+  }, [messages]);
 
   // init stompClient...
   //subscribe
@@ -80,7 +99,9 @@ const ChatPage = () => {
         });
       });
     };
-    connectWebSocket();
+    if (connected) {
+      connectWebSocket();
+    }
 
     //stomp client
   }, [roomId]);
@@ -106,6 +127,16 @@ const ChatPage = () => {
     }
   };
 
+  // handle log out
+  function handleLogOut() {
+    stompClient.disconnect();
+    toast.success("See you soon!");
+    setConnected(false);
+    setRoomId("");
+    setCurrentUser("");
+    navigate("/");
+  }
+
   return (
     <div className="">
       {/* header section */}
@@ -113,24 +144,30 @@ const ChatPage = () => {
         {/* room name container */}
         <div>
           <h1 className="text-xl font-semibold">
-            Room : <span>Friends Room</span>
+            Room : <span>{roomId}</span>
           </h1>
         </div>
         {/* username container */}
         <div>
           <h1 className="text-xl font-semibold">
-            User : <span>Rachit </span>
+            User : <span>{currentUser}</span>
           </h1>
         </div>
         {/* button leave room */}
         <div>
-          <button className="dark:bg-red-500 dark:hover:bg-red-700 px-3 py-2 rounded-full">
+          <button
+            onClick={handleLogOut}
+            className="dark:bg-red-500 dark:hover:bg-red-700 px-3 py-2 rounded-full"
+          >
             Leave Room
           </button>
         </div>
       </header>
 
-      <main className="py-20 px-10 w-2/3 dark:bg-slate-600 mx-auto h-screen overflow-auto">
+      <main
+        ref={chatBoxRef}
+        className="py-20 px-10 w-2/3 dark:bg-slate-600 mx-auto h-screen overflow-auto"
+      >
         {messages.map((message, index) => (
           <div
             key={index}
@@ -140,7 +177,7 @@ const ChatPage = () => {
           >
             <div
               className={`my-2 ${
-                message.sender === currentUser ? "bg-blue-500" : "bg-blue-900"
+                message.sender === currentUser ? "bg-blue-600" : "bg-blue-900"
               } p-2 max-w-xs rounded `}
             >
               <div className="flex flex-row gap-2">
