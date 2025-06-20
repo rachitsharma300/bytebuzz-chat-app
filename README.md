@@ -10,6 +10,15 @@
   <img src="https://img.shields.io/badge/Version-1.0.0-blueviolet?style=for-the-badge" />
   <img src="https://github.com/rachitsharma300/bytebuzz-chat-app/blob/main/LICENSE?style=for-the-badge" />
   <img src="https://img.shields.io/badge/PRs-Welcome-orange?style=for-the-badge" />
+
+
+  <p align="center">
+  <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Version-1.0.0-blueviolet?style=for-the-badge" />
+  <img src="https://img.shields.io/github/license/rachitsharma300/bytebuzz-chat-app?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/PRs-Welcome-orange?style=for-the-badge" />
+</p>
+
 </p>
 
 ---
