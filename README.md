@@ -61,7 +61,54 @@ add soon...
 
 ---
 
-## 📁 Folder Structure
-
-
-
+## Project Structure
+```
+ByteBuzz-Chat-App/
+├── bytebuzz-backend/
+│   └── src/
+│       └── main/
+│           └── java/
+│               └── com.rachit.bytebuzz.backend/
+│                   ├── config/
+│                   │   └── WebSocketConfig.java
+│                   ├── controllers/
+│                   │   ├── ChatController.java
+│                   │   └── RoomController.java
+│                   ├── entities/
+│                   │   ├── Message.java
+│                   │   └── Room.java
+│                   ├── payload/
+│                   │   └── MessageRequest.java
+│                   ├── repositories/
+│                   │   └── RoomRepository.java
+│                   └── BytebuzzBackendApplication.java
+│       ├── resources/
+│       └── test/
+│
+├── bytebuzz-frontend/
+│   └── src/
+│       ├── assets/
+│       │   ├── chat.png
+│       │   └── react.svg
+│       ├── components/
+│       │   ├── ChatPage.jsx
+│       │   └── JoinCreateChat.jsx
+│       ├── config/
+│       │   ├── AxiosHelper.js
+│       │   ├── helper.js
+│       │   └── Routes.jsx
+│       ├── context/
+│       │   └── ChatContext.jsx
+│       ├── services/
+│       │   └── RoomService.js
+│       ├── App.jsx
+│       ├── App.css
+│       ├── index.css
+│       ├── main.jsx
+│       └── index.html
+│
+├── Dockerfile
+├── .gitignore
+├── README.md
+└── package.json
+```
