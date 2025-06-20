@@ -48,5 +48,20 @@ add soon...
 </table>
 
 ---
+##  Features
+
+- ✅ **Real-Time Messaging** using WebSockets
+- 🧑‍🤝‍🧑 **Create & Join Chat Rooms**
+- 💾 **MongoDB Storage** for chats
+- 🎨 **Animated, Minimal UI** with Tailwind CSS
+- 🧠 **Custom Chatbot Support** *(Coming Soon)*
+- 🐳 **Dockerized App** – deploy anywhere!
+- 🔐 Room-level privacy (optional)
+- 🌙 Dark UI with React animations
+
+---
+
+## 📁 Folder Structure
+
 
 
