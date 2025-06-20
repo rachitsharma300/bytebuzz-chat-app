@@ -12,6 +12,7 @@
   "dependencies": {
     "@stomp/stompjs": "^7.1.1",
     "axios": "^1.10.0",
+    "canvas-confetti": "^1.9.3",
     "date-fns": "^4.1.0",
     "framer-motion": "^12.18.1",
     "react": "^19.1.0",
@@ -19,7 +20,8 @@
     "react-hot-toast": "^2.5.2",
     "react-icons": "^5.5.0",
     "react-router": "^7.6.2",
-    "sockjs-client": "^1.6.1"
+    "sockjs-client": "^1.6.1",
+    "use-sound": "^5.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
