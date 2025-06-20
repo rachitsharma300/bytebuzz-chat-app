@@ -43,7 +43,7 @@ add soon...
       <img src="https://img.icons8.com/color/96/tailwind_css.png" width="48"/><br/>Tailwind CSS
     </td>
     <td align="center" width="130">
-      <img src="https://www.vectorlogo.zone/logos/websocket/websocket-icon.svg" width="48"/><br/>WebSockets
+      <img src="https://img.shields.io/badge/Protocol-WebSocket-purple?style=for-the-badge" width="48"/><br/>WebSockets
     </td>
   </tr>
 </table>
