@@ -12,3 +12,41 @@
   <img src="https://img.shields.io/badge/PRs-Welcome-orange?style=for-the-badge" />
 </p>
 
+---
+
+## 📸 Preview
+add soon...
+
+
+![Preview](assets/demo.gif)
+
+---
+
+##  Tech Stack
+
+<table align="center">
+  <tr>
+    <td align="center" width="130">
+      <img src="https://img.icons8.com/color/96/000000/react-native.png" width="48"/><br/>React
+    </td>
+    <td align="center" width="130">
+      <img src="https://img.icons8.com/color/96/000000/spring-logo.png" width="48"/><br/>Spring Boot
+    </td>
+    <td align="center" width="130">
+      <img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/external-mongodb-a-cross-platform-document-oriented-database-program-logo-color-tal-revivo.png" width="48"/><br/>MongoDB
+    </td>
+    <td align="center" width="130">
+      <img src="https://img.icons8.com/color/96/000000/docker.png" width="48"/><br/>Docker
+    </td>
+    <td align="center" width="130">
+      <img src="https://img.icons8.com/color/96/tailwind_css.png" width="48"/><br/>Tailwind CSS
+    </td>
+    <td align="center" width="130">
+      <img src="https://www.vectorlogo.zone/logos/websocket/websocket-icon.svg" width="48"/><br/>WebSockets
+    </td>
+  </tr>
+</table>
+
+---
+
+
