@@ -1,30 +1,7 @@
-<h1>ByteBuzz-Chat-App</h1>
-<p>ByteBuzz: A blazing-fast real-time chat app powered by Spring Boot, WebSockets, React &amp; MongoDB. Designed for geeks, by a geek</p>
+<h1 align="center"> ByteBuzz Chat App</h1>
+<p align="center">
+  A powerful real-time chat app built with ❤️ using modern web technologies.
+  <br/>
+  <i>Spring Boot + React + WebSockets + MongoDB + Docker</i>
+</p>
 
-## ByteBuzz Frontend File Structure
-```
-bytebuzz-frontend/
-└── src/
-    ├── assets/
-    │   └── chat.png
-    │
-    ├── components/
-    │   ├── ChatPage.jsx
-    │   └── JoinCreateChat.jsx
-    │
-    ├── config/
-    │   ├── AxiosHelper.js
-    │   └── helper.js
-    │
-    ├── context/
-    │   └── ChatContext.jsx
-    │
-    ├── services/
-    │   └── RoomServices.js
-    │
-    ├── App.jsx
-    ├── Routes.jsx
-    ├── main.jsx
-    ├── index.css
-    └── App.css
-```
