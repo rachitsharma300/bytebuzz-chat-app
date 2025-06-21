@@ -36,25 +36,21 @@
   <a href="https://websockets.org/" target="_blank" rel="noreferrer">
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/WebSocket_colored_logo.svg/1024px-WebSocket_colored_logo.svg.png" alt="WebSocket" width="50" height="50" title="WebSocket"/>
 </a>  
-<br>
 <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
   <img src="https://techstack-generator.vercel.app/react-icon.svg" alt="React" width="60" height="60" title="React"/>
 </a>
 <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" width="65" height="65" title="Tailwind CSS"/>
 </a>
-<br>
 <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer">
   <img src="https://cdn.iconscout.com/icon/free/png-512/free-mongodb-icon-download-in-svg-png-gif-file-formats--wordmark-programming-langugae-logo-freebies-pack-logos-icons-1175140.png?f=webp&w=512" alt="MongoDB" width="65" height="65" title="MongoDB"/>
 </a>  
-<br>
 <a href="https://www.docker.com/" target="_blank" rel="noreferrer">
   <img src="https://techstack-generator.vercel.app/docker-icon.svg" alt="Docker" width="65" height="65" title="Docker"/>
 </a>
 <a href="https://github.com/features/actions" target="_blank" rel="noreferrer">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg" alt="GitHub Actions" width="65" height="65" title="GitHub Actions"/>
 </a>
-
 </p>
 
 ---
