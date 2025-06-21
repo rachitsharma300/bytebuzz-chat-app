@@ -113,14 +113,9 @@ We welcome contributions! Please follow these steps:
 5. Open a Pull Request
 6. See our Contributing Guidelines for more details.
 
-## Project Metrics
-## 📊 Project Metrics
-
-![Metrics](https://metrics.lecoq.io/rachitsharma300/bytebuzz-chat-app?template=classic&base=header%2C%20activity%2C%20community%2C%20repositories%2C%20metadata&base.indepth=false&base.hireable=false&base.skip=false&config.timezone=Asia%2FKolkata)
-
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 <br>
 
-<p align="center"> Made with ❤️ by <a href="https://github.com/rachitsharma300">Rachit Sharma</a> 
+<p align="center"> Made with ❤️ by <a href="https://github.com/rachitsharma300">Rachit Sharma</a> </p>
