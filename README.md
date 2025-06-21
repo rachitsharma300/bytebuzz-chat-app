@@ -10,8 +10,6 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/rachitsharma300/bytebuzz-chat-app/actions">
-    <img src="https://img.shields.io/github/actions/workflow/status/rachitsharma300/bytebuzz-chat-app/build.yml?style=for-the-badge&logo=github" alt="Build Status"/>
   </a>
   <a href="https://github.com/rachitsharma300/bytebuzz-chat-app/issues">
     <img src="https://img.shields.io/github/issues/rachitsharma300/bytebuzz-chat-app?style=for-the-badge&color=blue" alt="Open Issues"/>
