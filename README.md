@@ -48,9 +48,6 @@
 <a href="https://www.docker.com/" target="_blank" rel="noreferrer">
   <img src="https://techstack-generator.vercel.app/docker-icon.svg" alt="Docker" width="65" height="65" title="Docker"/>
 </a>
-<a href="https://github.com/features/actions" target="_blank" rel="noreferrer">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg" alt="GitHub Actions" width="65" height="65" title="GitHub Actions"/>
-</a>
 </p>
 
 ---
