@@ -10,19 +10,6 @@
 </p>
 
 <p align="center">
-  </a>
-  <a href="https://github.com/rachitsharma300/bytebuzz-chat-app/issues">
-    <img src="https://img.shields.io/github/issues/rachitsharma300/bytebuzz-chat-app?style=for-the-badge&color=blue" alt="Open Issues"/>
-  </a>
-  <a href="https://github.com/rachitsharma300/bytebuzz-chat-app/stargazers">
-    <img src="https://img.shields.io/github/stars/rachitsharma300/bytebuzz-chat-app?style=for-the-badge&color=yellow" alt="GitHub Stars"/>
-  </a>
-  <a href="https://github.com/rachitsharma300/bytebuzz-chat-app/network/members">
-    <img src="https://img.shields.io/github/forks/rachitsharma300/bytebuzz-chat-app?style=for-the-badge&color=green" alt="GitHub Forks"/>
-  </a>
-</p>
-
-<p align="center">
   <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Version-1.0.0-blueviolet?style=for-the-badge" />
   <img src="https://img.shields.io/github/license/rachitsharma300/bytebuzz-chat-app?style=for-the-badge" />
@@ -39,18 +26,36 @@
 
 ---
 
-## 🛠 Tech Stack
+<p align="left">
+<a href="https://www.java.com" target="_blank" rel="noreferrer">
+  <img src="https://techstack-generator.vercel.app/java-icon.svg" alt="Java" width="65" height="65" title="Java"/>
+</a>
+  <a href="https://spring.io/projects/spring-boot" target="_blank" rel="noreferrer">
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg" alt="Spring Boot" width=45"0" height="45"/>
+  </a>
+  <a href="https://websockets.org/" target="_blank" rel="noreferrer">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/WebSocket_colored_logo.svg/1024px-WebSocket_colored_logo.svg.png" alt="WebSocket" width="50" height="50" title="WebSocket"/>
+</a>  
 
-<div align="center">
+<a href="https://reactjs.org/" target="_blank" rel="noreferrer">
+  <img src="https://techstack-generator.vercel.app/react-icon.svg" alt="React" width="60" height="60" title="React"/>
+</a>
+<a href="https://tailwindcss.com/" target="_blank" rel="noreferrer">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" width="65" height="65" title="Tailwind CSS"/>
+</a>
 
-| Category       | Technologies                                                                                                                                                                                                                                                                                                                                 |
-|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Frontend**   | <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" /> <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" /> <img src="https://img.shields.io/badge/WebSocket-010101?style=for-the-badge&logo=websocket&logoColor=white" /> |
-| **Backend**    | <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring&logoColor=white" /> <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />                                                                                                                       |
-| **Database**   | <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" />                                                                                                                                                                                                                                  |
-| **DevOps**     | <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" /> <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" />                                                                                                            |
+<a href="https://www.mongodb.com/" target="_blank" rel="noreferrer">
+  <img src="https://cdn.iconscout.com/icon/free/png-512/free-mongodb-icon-download-in-svg-png-gif-file-formats--wordmark-programming-langugae-logo-freebies-pack-logos-icons-1175140.png?f=webp&w=512" alt="MongoDB" width="65" height="65" title="MongoDB"/>
+</a>  
 
-</div>
+<a href="https://www.docker.com/" target="_blank" rel="noreferrer">
+  <img src="https://techstack-generator.vercel.app/docker-icon.svg" alt="Docker" width="65" height="65" title="Docker"/>
+</a>
+<a href="https://github.com/features/actions" target="_blank" rel="noreferrer">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg" alt="GitHub Actions" width="65" height="65" title="GitHub Actions"/>
+</a>
+
+</p>
 
 ---
 
@@ -58,15 +63,15 @@
 
 <div align="center">
 
-| Feature | Description |
-|---------|-------------|
+| Feature                    | Description                                       |
+| -------------------------- | ------------------------------------------------- |
 | ⚡ **Real-Time Messaging** | Instant message delivery using WebSocket protocol |
-| 🏠 **Room Management** | Create, join, and manage multiple chat rooms |
-| 🔒 **Security** | Secure WebSocket connections with STOMP protocol |
-| 🎨 **Modern UI** | Beautiful, responsive interface with Tailwind CSS |
-| 🤖 **AI Integration** | Coming soon: ChatGPT-powered chat assistant |
-| 📱 **Cross-Platform** | Works on desktop and mobile browsers |
-| 🐳 **Containerized** | Easy deployment with Docker |
+| 🏠 **Room Management**     | Create, join, and manage multiple chat rooms      |
+| 🔒 **Security**            | Secure WebSocket connections with STOMP protocol  |
+| 🎨 **Modern UI**           | Beautiful, responsive interface with Tailwind CSS |
+| 🤖 **AI Integration**      | Coming soon: ChatGPT-powered chat assistant       |
+| 📱 **Cross-Platform**      | Works on desktop and mobile browsers              |
+| 🐳 **Containerized**       | Easy deployment with Docker                       |
 
 </div>
 
@@ -82,7 +87,9 @@ cd bytebuzz-chat-app
 # Run with Docker
 docker-compose up --build
 ```
+
 ## Project Structure
+
 ```
 ByteBuzz-Chat-App/
 ├── bytebuzz-backend/       # Spring Boot application
@@ -99,7 +106,9 @@ ByteBuzz-Chat-App/
 │       └── build.yml       # CI/CD pipeline
 └── README.md               # You are here :)
 ```
+
 ## Contributing
+
 We welcome contributions! Please follow these steps:
 
 1. Fork the project
@@ -110,6 +119,7 @@ We welcome contributions! Please follow these steps:
 6. See our Contributing Guidelines for more details.
 
 ## License
+
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 <br>
