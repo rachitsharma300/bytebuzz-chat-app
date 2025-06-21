@@ -27,6 +27,7 @@
 ---
 
 <p align="center">
+<p> Technology Used</p>
 <a href="https://www.java.com" target="_blank" rel="noreferrer">
   <img src="https://techstack-generator.vercel.app/java-icon.svg" alt="Java" width="65" height="65" title="Java"/>
 </a>
