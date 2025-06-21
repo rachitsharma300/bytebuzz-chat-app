@@ -39,8 +39,6 @@
 
 ![Preview](assets/demo.gif)
 
-*GIF showing real-time chat functionality*
-
 ---
 
 ## 🛠 Tech Stack
