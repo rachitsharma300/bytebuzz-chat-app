@@ -119,4 +119,6 @@ https://metrics.lecoq.io/rachitsharma300/bytebuzz-chat-app?template=classic&isoc
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-<p align="center"> Made with ❤️ by <a href="https://github.com/rachitsharma300">Rachit Sharma</a> <br/> <a href="https://www.buymeacoffee.com/rachitsharma">☕ Buy me a coffee</a> </p> ```
+<br>
+
+<p align="center"> Made with ❤️ by <a href="https://github.com/rachitsharma300">Rachit Sharma</a> 
