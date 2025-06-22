@@ -1,6 +1,7 @@
 package com.rachit.bytebuzz.backend.controllers;
 
 
+import com.rachit.bytebuzz.backend.config.AppConstants;
 import com.rachit.bytebuzz.backend.entities.Message;
 import com.rachit.bytebuzz.backend.entities.Room;
 import com.rachit.bytebuzz.backend.payload.MessageRequest;
@@ -15,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import java.time.LocalDateTime;
 
 @Controller
-@CrossOrigin("http://localhost:5173")
+@CrossOrigin(AppConstants.FRONT_END_BASE_URL)
 public class ChatController
 {
     private RoomRepository roomRepository;
