@@ -22,7 +22,7 @@
 
 > **Coming Soon!** We're working on deploying a live demo. Stay tuned!
 
-![Preview](assets/demo.gif)
+![Preview](https://github.com/rachitsharma300/bytebuzz-chat-app/blob/main/Demo.mp4)
 
 ---
 ## Technology Used
