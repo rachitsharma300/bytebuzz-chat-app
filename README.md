@@ -1,3 +1,9 @@
+## 📽 Demo Video
+
+👉 [Click here to watch the demo](https://github.com/rachitsharma300/bytebuzz-chat-app/blob/main/Demo.mp4)
+
+
+
 <h1 align="center"> 
   <img src="https://img.icons8.com/fluency/96/chat-message.png" alt="icon" width="50"/> 
   ByteBuzz Chat App
