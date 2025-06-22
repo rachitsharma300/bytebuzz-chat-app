@@ -19,13 +19,14 @@
 ---
 
 ## 🎥 Live Demo & Preview
-
-> **Coming Soon!** We're working on deploying a live demo. Stay tuned!
 <video width="600" controls>
-
   <source src="https://github.com/rachitsharma300/bytebuzz-chat-app/raw/main/Demo.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+
+
+
+> **Coming Soon!** We're working on deploying a live demo. Stay tuned!
 
 
 ---
