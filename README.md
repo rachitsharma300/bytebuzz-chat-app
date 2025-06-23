@@ -3,8 +3,6 @@
   ByteBuzz Chat App
 </h1>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/f788b4a5-67a1-4f1d-ba13-62b8869f13fd/deploy-status)](https://app.netlify.com/projects/roaring-creponne-b25f50/deploys)
-
 <p align="center">
   A powerful real-time chat app built with ❤️ using modern web technologies.
   <br/>
