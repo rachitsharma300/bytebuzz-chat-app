@@ -2,6 +2,10 @@
   <img src="https://img.icons8.com/fluency/96/chat-message.png" alt="icon" width="50"/> 
   ByteBuzz Chat App
 </h1>
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&pause=1000&center=true&width=650&color=00BFFF&lines=ByteBuzz+Chat+App" alt="Typing SVG" />
+</p>
+
 
 <p align="center">
   A powerful real-time chat app built with ❤️ using modern web technologies.
