@@ -4,12 +4,6 @@
   </a>
 </p>
 
-
-
-
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=50&pause=1000&color=4142F7&vCenter=true&width=300&lines=%F0%9F%97%AB+ByteBuzz+Chat)](https://git.io/typing-svg)
-
-
 <p align="center">
   A powerful real-time chat app built with ❤️ using modern web technologies.
   <br/>
