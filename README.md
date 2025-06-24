@@ -1,7 +1,7 @@
 <p align="center">
   <span>
     <img src="https://img.icons8.com/fluency/96/chat-message.png" alt="Chat Icon" width="50" style="vertical-align: middle;"/>
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=60&pause=1000&color=4142F7&vCenter=true&width=300&lines=Bytebuzz(https://git.io/typing-svg" style="vertical-align: middle;"/>
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=50&pause=1000&color=4142F7&vCenter=true&width=300&lines=Bytebuzz(https://git.io/typing-svg" style="vertical-align: middle;"/>
   </span>
 </p>
 
