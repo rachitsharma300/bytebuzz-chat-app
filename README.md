@@ -1,9 +1,9 @@
 <h1 align="center"> 
   <img src="https://img.icons8.com/fluency/96/chat-message.png" alt="icon" width="50"/> 
   ByteBuzz Chat App
+</h1>
 
   [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=50&pause=1000&color=4142F7&vCenter=true&width=435&lines=ByteBuzz+Chat+App)](https://git.io/typing-svg)
-</h1>
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&pause=1000&center=true&width=650&color=00BFFF&lines=ByteBuzz+Chat+App" alt="Typing SVG" />
