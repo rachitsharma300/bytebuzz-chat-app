@@ -3,14 +3,6 @@
   ByteBuzz Chat App
 </h1>
 
-  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=50&pause=1000&color=4142F7&vCenter=true&width=435&lines=ByteBuzz+Chat+App)](https://git.io/typing-svg)
-
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&pause=1000&center=true&width=650&color=00BFFF&lines=ByteBuzz+Chat+App" alt="Typing SVG" />
-</p>
-
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=50&pause=1000&color=4142F7&width=435&lines=ByteBuzz+Chat+App)](https://git.io/typing-svg)
-
 <p align="center">
   A powerful real-time chat app built with ❤️ using modern web technologies.
   <br/>
