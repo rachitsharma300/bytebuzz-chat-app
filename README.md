@@ -1,8 +1,15 @@
 <h1 align="center"> 
-  <img src="https://img.icons8.com/fluency/96/chat-message.png" alt="icon" width="50"/> 
-  
-  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=60&pause=1000&color=4142F7&vCenter=true&width=300&lines=ByteBuzz)](https://git.io/typing-svg)
+  <img src="https://img.icons8.com/fluency/96/chat-message.png" alt="icon" width="50"/>
 </h1>
+
+<h1 align="center"> 
+  <!-- Chat logo on top -->
+  <img src="https://img.icons8.com/fluency/96/chat-message.png" alt="Chat Icon" width="50" />
+  <br/>
+  <!-- Typing animation below the icon -->
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=30&pause=1000&color=4142F7&width=600&lines=ByteBuzz+Chat+App;Java+Full+Stack+Development;This+repo+is+for+Java+Full+Stack+learners" alt="Typing SVG" />
+</h1>
+
 
 <p align="center">
   A powerful real-time chat app built with ❤️ using modern web technologies.
